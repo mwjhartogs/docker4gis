@@ -1,5 +1,7 @@
 #!/bin/bash
 
-CONTAINER="$1"
+container="$1"
 
-docker start "$CONTAINER"
+echo; echo "Starting $container..."
+
+docker container start "$container" 2>/dev/null
