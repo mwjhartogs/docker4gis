@@ -4,12 +4,16 @@
 
 Quickly pull up a stable baseline for your Geographical Information System, by extending some of the Docker images for common GIS components:
 
-- PostGIS database
-- GeoServer for maps
+- PostGIS database, including authenticated PostgREST API option w/ Swagger UI
+- MySQL database
+- GeoServer and MapServer for map services
+- MapProxy for caching or transfroming map services
+- MapFish for printing maps in PDF templates
 - Postfix mailserver
-- Cron for system tasks
+- Cron for scheduled tasks
 - Elm Single Page App server
-- Glassfish Java API server
+- Tomcat or Glassfish Java API server
+- HTTP static file server
 - Reverse Proxy
 - Docker registry
 
@@ -31,7 +35,6 @@ Base images are available on [Docker Hub](https://hub.docker.com/u/docker4gis). 
 ## Getting started
 
 - We're creating an Example project to show how to typically set things up.
-- Also, we're planning to host an introductory workshop in Apr 2019, in cooperation with [OSGeoNL](https://osgeo.nl/).
 - We're adding [documentation](docs) explaining all the special features as well.
 - To quickly pull up a development environment, follow our [Cloud Dev Env Guide](docs/clouddevenv.md). Or, [check](docs#development-environment) what you'd need on your laptop.
 
